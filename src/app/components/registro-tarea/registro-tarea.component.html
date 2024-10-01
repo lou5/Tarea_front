@@ -1,0 +1,94 @@
+<div class="content-header background-image">
+    <div class="margentitle">
+        <div class="col-12">
+            <div class="card-solid">
+                <h1>
+                    <b class="text-olive"> Registro de TAREAS</b>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="card ovalado margentotal">
+            <div class="card-body margenI">
+                
+                <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+                    <mat-tab label="Datos Tarea y persona">
+
+                        <br>
+                        <br>
+                        <form [formGroup]="TAREAForm">
+                            <div class="col-12 row text-xs">
+                                <div class="col-3">
+                                    <div class="row">
+                                        <mat-form-field appearance="fill" class="custom-form-field">
+                                            <mat-label class="custom-input">Nombre de la tarea.</mat-label>
+                                            <input matInput formControlName="nombreTarea" class="custom-input">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                              
+                                <div class="col-3">
+                                    <div class="row">
+                                        <mat-form-field appearance="fill" class="custom-form-field">
+                                            <mat-label class="custom-input">Fecha limite de la tarea.</mat-label>
+                                            <input matInput formControlName="fechaLimite" class="custom-input"
+                                                style="text-transform: uppercase;">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row ">
+                                        <mat-form-field appearance="fill" class="custom-form-field">
+                                            <mat-label class="custom-input">Nombre de la persona</mat-label>
+                                            <input matInput formControlName="nombrePersona" class="custom-input"
+                                                style="text-transform: uppercase;">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row ">
+                                        <mat-form-field appearance="fill" class="custom-form-field">
+                                            <mat-label class="custom-input">Edad</mat-label>
+                                            <input matInput formControlName="edad" class="custom-input"
+                                                style="text-transform: uppercase;">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                             
+                              
+                             
+                                <div class="col-3">
+                                    <div class="row ">
+                                        <mat-form-field appearance="fill" class="custom-form-field">
+                                            <mat-label class="custom-input">Habilidades</mat-label>
+                                            <input matInput formControlName="Habilidades" class="custom-input"
+                                                style="text-transform: uppercase;">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </mat-tab>
+                   
+                </mat-tab-group>
+               
+            </div>
+
+            
+
+        </div><br>
+        <div class="col-12 margenb">
+            <div class="row">
+                <div class="col-12">
+                    <button  type="button" mat-raised-button color="secondary" class="btn bg-gray " > Cancelar</button>
+                    &nbsp;&nbsp;
+                    <button type="button" mat-raised-button color="primary" (click)=" guardar()">Guardar</button>
+                    <!-- [disabled]="!anonimoForm.valid && !afectadoForm.valid" -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

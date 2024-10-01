@@ -1,0 +1,353 @@
+.tarea-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+ 
+  padding-top: 50px; /* Espacio desde la parte superior */
+  
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 3%;
+}
+
+.tarea-card {
+  width: 400px; /* Ancho de la tarjeta */
+  padding: 20px;
+  border-radius: 8px; /* Esquinas redondeadas */
+  box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mat-form-field {
+  width: 100%; /* Hace que los inputs ocupen todo el ancho */
+}
+
+/* ............................................. TABLA , MODAL ......-............................................ */
+
+.custom-container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+/* Puedes ajustar estas dimensiones según lo necesites */
+.modal {
+display: block; /* Muestra el modal */
+position: fixed;
+z-index: 1000;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro */
+}
+
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: 5% auto; /* Centra el modal */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Aumenta el ancho del modal */
+max-width: 1200px; /* Define un ancho máximo */
+}
+
+.close {
+position: absolute;
+top: 10px;
+right: 25px;
+color: #000;
+font-size: 35px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.modal-body {
+max-height: 70vh; /* Controla la altura máxima del cuerpo del modal */
+overflow-y: auto; /* Añade scroll si el contenido es demasiado largo */
+}
+.background-image {
+background-image: url('/assets/images/fondoo.jpg'); /* Reemplaza con la ruta a tu imagen */
+background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+background-position: center; /* Centra la imagen en el contenedor */
+background-repeat: no-repeat; /* Evita que la imagen se repita */
+height: 100vh; /* Ajusta la altura según sea necesario */
+width: 100%; /* Ajusta el ancho según sea necesario */
+}
+
+.modal-footer {
+background-color: #f1f1f1;
+padding: 10px 20px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.close {
+color: rgb(33, 17, 17);
+font-size: 1.5em;
+font-weight: bold;
+cursor: pointer;
+}
+
+.custom-input {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+button {
+  margin-top: 15px;
+}
+
+/* Estilos adicionales para mejor adaptación en pantallas pequeñas */
+@media (max-width: 600px) {
+  .modal {
+      width: 95vw; /* Reduce el ancho en pantallas muy pequeñas */
+      padding: 15px;
+  }
+
+  .modal-content {
+      padding: 15px;
+  }
+
+  .close {
+      font-size: 1.2em;
+      right: 10px;
+      top: 10px;
+  }
+}
+
+/* ************************************* */
+.ovalado{
+border-radius: 20px;
+}
+
+.margin1{
+margin-left: 4%;
+}
+
+.margentotal{
+margin-left: 12%;
+margin-right: 12%;
+margin-bottom: 3%;
+}
+
+.margentable{
+margin-left: 2%;
+margin-right: 2%;
+}
+
+.margenI{
+margin-left: 3%;
+margin-right: 1%;
+}
+
+.custom-form-field {
+width: 90%; /* Ajusta el tamaño a tu necesidad */
+}
+
+/* *********** ESTILOS DE LA TABLA ************* */
+
+.table-container{
+overflow-x: auto;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+border-radius: 20px;
+overflow: hidden; /* Asegura que los bordes redondeados no se corten */
+}
+
+th {
+font-weight: bold;
+background-color: #f1f1f1;
+padding: 10px;
+text-align: center;
+font-size: 16px;
+color: #333;
+}
+
+/* Filas de la tabla */
+td {
+padding: 10px;
+font-size: 14px;
+text-align: center;
+}
+
+/* Resaltar filas alternas */
+tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+
+/* Bordes redondeados en las esquinas de la tabla */
+.mat-elevation-z8 {
+border-radius: 20px;
+overflow: hidden;
+overflow-x: auto;
+}
+
+/* Ajuste de botones en la tabla */
+button.mat-button {
+background-color: #4CAF50;
+color: white;
+border-radius: 5px;
+}
+
+button.mat-button:hover {
+background-color: #45a049;
+}
+
+/* Responsividad */
+@media only screen and (max-width: 600px) {
+th, td {
+    font-size: 12px;
+    padding: 8px;
+}
+
+button.mat-button {
+    font-size: 12px;
+}
+
+Ajusta el tamaño del modal en pantallas pequeñas
+.modal-content {
+    width: 100%;
+}
+.green-icon {
+  color: #58a069; /* Color del icono */
+}
+.red-icon{
+  color: #dc4848;}
+}
+.card {
+border: 1px solid #ddd;
+padding: 15px;
+border-radius: 5px;
+background-color: #f9f9f9;
+}
+
+
+.custom-form-field {
+width: 95%; /* Ajusta el tamaño a tu necesidad */
+}
+.custom-form-fieldd {
+display: block;
+/* margin-bottom: 5px; */
+font-weight: bold;
+width: 80%; /* Ajusta este valor según lo que necesites */
+height: 35px; /* Puedes cambiar el valor según el alto que desees */
+}
+
+.custom-input {
+font-size: 13px; /* Ajusta el tamaño de la letra a tu necesidad */
+}
+.custom-file-input {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+.custom-file-label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+.custom-file-label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+.input-container {
+position: relative;
+width: 100%;
+}
+
+.input-wrapper {
+display: flex;
+align-items: center;
+}
+
+.custom-input {
+flex: 1;
+margin-right: 0;
+padding-right: 40px; /* Espacio para el botón de borrar */
+}
+
+.clear-button {
+position: absolute;
+right: 10px; /* Ajusta según el espaciado necesario */
+top: 50%;
+transform: translateY(-50%);
+z-index: 1;
+}
+.custom-button {
+background-color: white; /* Color de fondo verde */
+border: none;
+color: white;
+padding: 7px 8px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+margin:2px 1px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s;
+}
+.custom-button:hover {
+background-color: #cfd6cf; /* Color de fondo verde más oscuro al pasar el mouse */
+}
+.custom-button .custom-icon {
+color: #ffffff; /* Color dorado para el icono */
+}
+.button-container {
+display: flex;
+justify-content: flex-end; /* Posiciona el botón a la derecha */
+}
+.btn-green {
+display: flex;
+align-items: center; /* Alinea verticalmente el texto con el ícono */
+padding: 5px 10px; 
+border: none;
+background-color: olive; /* Color de fondo del botón */
+color: white; /* Color del texto */
+font-size: 16px; /* Tamaño de fuente */
+cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+mat-icon {
+margin-left: 15px; /* Espacio entre el texto y el ícono */
+}
+.custom-option-text {
+font-size: 10px; /* Cambia el tamaño de la letra aquí */
+}
+.large-icon {
+font-size: 36px; /* Puedes ajustar el tamaño según tus necesidades */
+}
+
+.near-deadline {
+color: red;
+font-weight: bold;
+}
+.estado-pendiente {
+color: red;
+font-weight: bold;
+}
+.estado-en-proceso {
+color:rgb(255, 136, 0);
+font-weight: bold;
+}
+
+.estado-cerrado {
+color: green;
+font-weight: bold;
+}

@@ -1,0 +1,110 @@
+.margin{
+    margin-top: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.mcard{
+  margin-top: 5%;
+}
+
+.margintext{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.margincard{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.custom-form-field1 {
+    width: 60%; 
+    margin-bottom: 5px; 
+    justify-content: center;
+  }
+  
+  .custom-input2 {
+    font-size: 13px; 
+    color: #3d9970;
+  }
+  
+  .custom-input input {
+    padding: 10px; 
+    border: 1px solid #000000; 
+    border-radius: 4px; 
+  }
+  
+  .margeninput{
+    margin-top: 3%;
+    margin-left: 32%;
+    
+  }
+
+  .margentitle{
+    margin-top: 4%;
+    margin-left: 4%;
+    
+  }
+
+  .margenb{
+    /* margin-top: 2%; */
+    margin-bottom: 1%;
+    
+  }
+
+  .custom-form-field {
+    width: 90%; /* Ajusta el tamaño a tu necesidad */
+  }
+  
+.custom-input {
+    font-size: 13px; /* Ajusta el tamaño de la letra a tu necesidad */
+}
+
+.margentotal{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.margenI{
+  margin-left: 3%;
+  margin-right: 1%;
+}
+
+
+.example-margin {
+  margin: 10px;
+}
+
+.ovalado{
+  border-radius: 20px;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.mat-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Espacio entre el icono y el texto */
+}
+.mat-card-content {
+  flex: 1; /* Permite que el contenido ocupe el espacio restante */ 
+}
+.card:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.2s ease-in-out;
+}
+.custom-table {
+  border-radius: 15px; /* Ajusta el valor según el nivel de curvatura deseado */
+  overflow: hidden; /* Para asegurarte de que el contenido de la tabla no sobresalga */
+  border: 1px solid #ccc; /* Añadir un borde para que sea visible */
+}
+.green-icon {
+  color: #58a069; /* Color del icono */
+}
+.red-icon{
+  color: #dc4848;}
